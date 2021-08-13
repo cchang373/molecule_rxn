@@ -172,9 +172,3 @@ def adsorbate_graph(traj_file_path,out_file_path, metal, CC_cutoff, CO_cutoff, C
     nx.write_gpickle(G,out_file_path)
     return
 
-if __name__ == '__main__':
-    remove_lower_metal('example.traj','example_r.traj',16.5)   
-    s=locate_adsorbate('example_r.traj','Rh')
-    graph_traj('example_r.traj','graph.traj',s,'Rh',14.5,2.9,2.75,2.3)
-    adsorbate_graph('graph.traj','graph.gpickle', 'Rh', 1.7, 1.9, 1.3, 1.3, 2.9, 2.75, 2.3)
-

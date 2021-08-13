@@ -28,7 +28,7 @@ def to_dict(Graph):
     nodes=[]
     
     for node in Graph.nodes():
-        atoms.append(Graph.node[node].copy())
+        atoms.append(Graph.nodes[node].copy())
         nodes.append(node)
     
     for edge in Graph.edges():
@@ -185,18 +185,4 @@ def all_groups_dict(all_groups):
         all_group_dict.append(mol)
         
     return all_group_dict   
-                          
-
-if __name__ == '__main__':
-    mol_dict=generate_mol_dict('CO','smi')
-    G_mol=mol_graph(mol_dict)
-    all_groups=subgroup([G_mol])
-    for i, group in enumerate(all_groups):
-        nx.write_gpickle(group, './%i.gpickle' % i)
-    all_group_dict=all_groups_dict(all_groups)
-
-    """
-    with open('groups_'+name+'.pickle','wb') as f:
-        #save all the unique groups graph and group dictionary to a pickle file
-        pickle.dump((all_groups,all_group_dict),f)
-    """        
+                                  

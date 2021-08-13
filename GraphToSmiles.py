@@ -60,10 +60,3 @@ def MolFromGraphs(node_list, adjacency_matrix):
     mol = Chem.MolFromSmiles(smi_n)
     smi_n = Chem.MolToSmiles(mol)
     return smi_n
-if __name__ == '__main__':
-    node_list, adjacency_matrix = gpickle_to_matrix('graph.gpickle')
-    #print(node_list)
-    #print(adjacency_matrix)
-    smi = MolFromGraphs(node_list, adjacency_matrix)
-    print(smi)
-

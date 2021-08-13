@@ -171,7 +171,4 @@ def ecfp(mol,radius):
         atoms_dict=round_ids
         atom_neighborhoods=copy.deepcopy(round_atom_neighborhoods)
     return bitInfo
-#mol=Chem.MolFromSmiles('CO')    
-#print(ecfp(mol,2))        
-
  

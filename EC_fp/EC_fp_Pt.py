@@ -177,8 +177,4 @@ def ecfp(mol,radius):
     return bitInfo
     
         
-#mol_Pt = Chem.MolFromSmiles('[Rh]')
-#mol_Rh = Chem.MolFromSmiles('[Rh]')
-#print(ecfp(mol_Pt,0))
-#print(ecfp(mol_Rh,1))
-#print(ecfp(mol_Rh,2)) 
+
