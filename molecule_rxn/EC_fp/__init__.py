@@ -1,1 +1,1 @@
-from .EC_fp_Pt import *
+from .EC_fp import *
