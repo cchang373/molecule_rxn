@@ -130,7 +130,6 @@ def ecfp(mol,radius):
     :param radius: int
     :rtype: dict
     """
-    #mol=Chem.AddHs(mol)
     bitInfo={}
     atoms_dict=invariants(mol)
     
