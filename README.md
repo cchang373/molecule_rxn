@@ -1,6 +1,5 @@
 # molecule_rxn
-Molecule_rxn is a python package used for generating possible intermediates from molecules in a brute-force way. SMILES notation can be generated from ASE trajectory file
-and graph representation.
+Molecule_rxn is a python package used for generating possible intermediates from molecules in a recursive and brute-force way. SMILES notation can be generated from ASE trajectory file and graph representation.
 
 ## Installation
 - Create conda environment and install `RDkit`: `conda create -n molecule_rxn -c rdkit/label/beta rdkit`
