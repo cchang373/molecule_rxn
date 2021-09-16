@@ -14,9 +14,8 @@ Molecule_rxn is a python package used for generating possible intermediates from
 ### Generation of intermediates and SMILES notation, graph representation
 See `example.py`
 ### Generation of modified Morgan Fingerprinting
-"""
+```
 from molecule_rxn.EC_fp.EC_fp import ecfp
 
 bitInfo = ecfp('CO', 2) #SMILES notation, radius
-"""
-
+```
