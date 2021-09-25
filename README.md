@@ -13,6 +13,12 @@ Molecule_rxn is a python package used for generating possible intermediates from
 ## Usage
 ### Generation of intermediates and SMILES notation, graph representation
 See `example.py`
+### Generation of surface species
+```
+from add_metal import add_metal, add_metal_all
+species_single = add_metal().add_metal('[O]C[C]', 'Rh')
+species_all = add_metal_all().add_metal_all(['[O]C[C]'], 'Rh')
+```
 ### Generation of modified Morgan Fingerprinting
 ```
 from molecule_rxn.EC_fp.EC_fp import ecfp
