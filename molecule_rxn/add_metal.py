@@ -174,7 +174,7 @@ class add_metal():
     
         return self.smis_Pt
 
-print(add_metal().add_metal('[O]C[C]','Rh'))
+#print(add_metal().add_metal('[O]C[C]','Rh'))
 
 class add_metal_all():
     def __init__(self):
@@ -204,5 +204,5 @@ class add_metal_all():
         else:
             #print('still looping: ',self.smis_Pt_list)
             return self.add_metal_all(new_list, metal)
-print(add_metal_all().add_metal_all(['[O]C[C]'],'Rh'))
+#print(add_metal_all().add_metal_all(['[O]C[C]'],'Rh'))
 
