@@ -9,6 +9,7 @@ Molecule_rxn is a python package used for generating possible intermediates from
   - networkx: `pip install networkx`
   - ASE: `pip install --upgrade --user ase`
   - Open Babel: `conda install -c conda-forge openbabel`
+  - bitarray: `pip install bitarray`
 - Install `molecule_rxn`: `pip install git+https://github.com/cchang373/molecule_rxn.git`
 
 ## Usage
@@ -23,6 +24,8 @@ species_all = add_metal_all().add_metal_all(['[O]C[C]'], 'Rh')
 ### Generation of modified Morgan Fingerprinting
 ```
 from molecule_rxn.EC_fp.EC_fp import ecfp
+from rdkit import Chem
 
-bitInfo = ecfp('CO', 2) #SMILES notation, radius
+mol = Chem.MolFromSmiles('CO')
+bitInfo = ecfp(mol, 2) #Mol object, radius
 ```
