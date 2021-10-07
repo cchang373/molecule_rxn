@@ -10,7 +10,8 @@ Molecule_rxn is a python package used for generating possible intermediates from
   - ASE: `pip install --upgrade --user ase`
   - Open Babel: `conda install -c conda-forge openbabel`
   - bitarray: `pip install bitarray`
-- Install `molecule_rxn`: `pip install git+https://github.com/cchang373/molecule_rxn.git`
+- Download `molecule_rxn`: `git clone https://github.com/cchang373/molecule_rxn.git`
+- Installation: install the package with `pip install -e molecule_rxn`
 
 ## Usage
 ### Generation of intermediates and SMILES notation, graph representation
