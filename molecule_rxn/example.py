@@ -1,6 +1,6 @@
 
 #recursive bond breaking example (methanol)
-from recursive_bond_breaking import *
+from molecule_rxn.recursive_bond_breaking import *
 
 mol_dict = generate_mol_dict('CO','smi') #create molecule dictionary from SMILES notation
 G_mol = mol_graph(mol_dict) #generate molecule graph
@@ -13,7 +13,7 @@ all_group_dict = all_groups_dict(all_groups)
 
 
 #traj to SMILES example
-from TrajToGraph import *
+from molecule_rxn.TrajToGraph import *
 from GraphToSmiles import *
 
 remove_lower_metal('example.traj','example_r.traj',16.5) #remove all lower metal atoms 
