@@ -12,6 +12,7 @@ setup(
     install_requires=['networkx',
                       'imolecule',
                       'ase',
+                      'bitarray'
                       ],
 
     classifiers=[
